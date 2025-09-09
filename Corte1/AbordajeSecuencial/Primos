@@ -1,0 +1,14 @@
+while True:
+    g = input("Ingrese un número: ")
+    g = int(g)
+
+    cont = 0
+    for n in range(1, g + 1):
+        rsd = g % n
+        if rsd == 0:
+            cont = cont + 1
+
+    if cont == 2:
+        print(f'{g} es un número primo\n')
+    else:
+        print(f'{g} NO es un número primo\n')
