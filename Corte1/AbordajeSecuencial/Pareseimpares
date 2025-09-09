@@ -1,0 +1,8 @@
+while True:
+    i = input("Ingrese un número: ")
+    i = int(i)
+    rsd = i % 2
+    if rsd == 0:
+        print(str(i) + " es par")
+    else:
+        print(str(i) + " es impar")
