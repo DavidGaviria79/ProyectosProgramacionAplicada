@@ -1,0 +1,45 @@
+#################TUPLAS####################
+###########################################
+# Una tupla es como una lista, pero inmutable (no se puede modificar)
+
+# Convertimos una lista a tupla
+print("###########################")
+print("###########################")
+print("###########################")
+print("############TUPLAS#########")
+my_tupla = tuple(my_lista)
+print()
+print()
+print("my_tuple: ", my_tupla)
+
+# Accedemos a elementos de la tupla por índice
+print(my_tupla[0])
+print(my_tupla[2])
+
+# Verificamos si 'Perro' está en la tupla (True/False)
+print('Perro' in my_tupla)
+
+# Contamos cuántas veces aparece 'Perro'
+print(my_tupla.count('Perro'))
+
+# Una tupla con un solo elemento → OJO: falta la coma, así no es tupla real
+my_tupla_unitaria = ('Zorro')  
+print(my_tupla_unitaria)  # Esto en realidad es un str
+
+# Empaquetado de tupla: no hace falta paréntesis
+my_tupla = 'Colombia', 'Bogotá', 52000000, 'Peso Colombiano'
+print(my_tupla)
+
+# Desempaquetado: cada valor se asigna a una variable
+pais, capital, poblacion, moneda = my_tupla
+print(pais)
+print(capital)
+print(poblacion)
+print(moneda)
+
+# Mostramos todas las variables desempaquetadas
+print("País:", pais, "- Capital:", capital, "- Población:", poblacion, "- Moneda:", moneda)
+
+# Convertimos la tupla a lista
+my_lista2 = list(my_tupla)
+print(my_lista2)
