@@ -1,0 +1,74 @@
+#################LISTAS####################
+###########################################
+# Definimos una lista con varios animales
+my_lista = ['Perro', 'Gato', 'Loro', 'Conejo', 'Tigre', 'León']
+
+# Imprimimos toda la lista
+print(my_lista)
+
+# Mostramos el tipo de dato (list)
+print(type(my_lista))
+
+# Accedemos al elemento en la posición 2 (recordemos que inicia en 0)
+print(my_lista[2])
+
+# Mostramos el tamaño (longitud) de la lista
+print("my_lista size: ", len(my_lista))
+
+# Imprimimos desde la posición 0 hasta antes de la 2 → ['Perro', 'Gato']
+print(my_lista[0:2])
+
+# Lo mismo que arriba, omitiendo el 0 → ['Perro', 'Gato']
+print(my_lista[:2])
+
+# Agregamos un elemento al final de la lista
+my_lista.append('Zorro')
+print(my_lista)
+
+# Insertamos 'Oso' en la posición 3 (desplaza el resto)
+my_lista.insert(3, 'Oso')
+print(my_lista)
+
+# Extendemos la lista concatenando otra lista con dos elementos
+my_lista.extend(['Caballo', 'Elefante'])
+print(my_lista)
+
+# Obtenemos el índice donde aparece 'Gato'
+print(my_lista.index('Gato'))
+
+# Eliminamos el elemento 'Caballo' de la lista
+my_lista.remove('Caballo')
+print(my_lista)
+
+# Insertamos 'Caballo' en la posición 8
+my_lista.insert(8, 'Caballo')
+print(my_lista)
+
+# Eliminamos el último elemento de la lista y lo mostramos
+print(my_lista.pop())
+
+# Mostramos el tamaño actual de la lista
+size = len(my_lista)
+print("size = ", size)
+
+# Multiplicamos la lista por 3 (se repite 3 veces)
+my_lista_3 = my_lista * 3
+print("my_lista_3: ", my_lista_3)
+
+# Ordenamos la lista alfabéticamente
+print("Sort:")
+print()
+my_listaSort = my_lista.sort()  # ¡Ojo! .sort() ordena en el lugar y devuelve None
+print(my_listaSort)             # Por eso esto imprime "None"
+
+# Lista numérica para ejemplo de ordenamiento
+my_NumList = [10, 9, 8, 7, 6 , 5 , 4, 3, 2, 1]
+print("Ordering my_NumList: ")
+
+# Ordenamos de menor a mayor
+my_NumList.sort()
+print(my_NumList)
+
+# Ordenamos de mayor a menor con reverse=True
+my_NumList.sort(reverse = True)
+print("De menor a mayor: ", my_NumList)
